@@ -32,6 +32,8 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
+		
+		// Add 1st line of comment
 
 		return "home";
 	}

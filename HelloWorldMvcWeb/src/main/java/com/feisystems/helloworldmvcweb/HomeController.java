@@ -34,6 +34,7 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		// Add 1st line of comment
+		// Add 2nd line of comment
 
 		return "home";
 	}

@@ -15,6 +15,15 @@
 
 		<cobertura-maven-plugin.version>2.5.2</cobertura-maven-plugin.version>
 	</properties>
+	
+	<!-- Since buildnumber-maven-plugin uses git command, git command must in 
+		path. i.e. need set git in the path Environment variable -->
+	<scm>
+		<url>https://github.com/tlin-fei/HelloWorldMvcWeb</url>
+		<connection>scm:git:https://github.com/tlin-fei/HelloWorldMvcWeb.git</connection>
+		<developerConnection>scm:git:https://github.com/tlin-fei/HelloWorldMvcWeb.git</developerConnection>
+	</scm>
+	
 	<dependencies>
 		<!-- Spring -->
 		<dependency>
